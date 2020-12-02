@@ -1,0 +1,497 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.80"
+        android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >    
+                    
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+	            <TextView
+	                android:id="@+id/lbShape"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:text="ShapeID = " 
+	                android:textSize="13sp"/>
+	            
+	            <EditText
+	                android:id="@+id/shapesIDs"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:editable ="false"
+	                android:textIsSelectable="true"
+	                android:lines="1"
+	                android:textSize="13sp" />
+
+			</LinearLayout>
+			
+             <TextView
+                 android:id="@+id/txSttsLahan"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:text="11. Status Kepemilikan Lahan yang dimiliki :"
+                 android:textSize="13dp" />
+
+              <TextView
+                  android:id="@+id/txAnsSttsLahan"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="23dp"
+                  android:layout_marginBottom="5dp"
+                  android:layout_weight="1"
+                  android:textSize="13dp"
+                  android:text="...." />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:orientation="horizontal" >
+                     
+               <TextView
+                   android:id="@+id/txLamaLhn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="12. Lama menguasai lahan :"
+                   android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/txAnsLamaLhn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="...."
+                    android:textSize="13dp" />
+				</LinearLayout>
+                
+               <TextView
+                     android:id="@+id/txLuasKebun"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:text="13. Luas Kebun :"
+                     android:textSize="13dp" />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="5dp"
+                     android:layout_weight="1"
+                     android:orientation="horizontal" >
+
+	                <TextView
+	                    android:id="@+id/txLuasProd"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="23dp"
+	                    android:text="a) Kebun Menghasilkan :"
+	                    android:textSize="13dp" />
+
+	                <TextView
+	                    android:id="@+id/txAnsLuasProd"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="...."
+	                    android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+	                <TextView
+	                    android:id="@+id/txLuasNonProd"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="23dp"
+	                    android:text="b) Kebun Belum Menghasilkan :"
+	                    android:textSize="13dp" />
+
+	                <TextView
+	                    android:id="@+id/txAnsLuasNonProd"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="5dp"
+	                    android:text="...."
+	                    android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txThnTanam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="14. Tahun Tanam :"
+                    android:textSize="13dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+	                
+	                <TextView
+	                    android:id="@+id/txThnTanamProd"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="23dp"
+	                    android:text="a) Kebun menghasilkan :"
+	                    android:textSize="13dp" />
+
+	                 <TextView
+	                     android:id="@+id/txAnsThnTanamProd"
+	                     android:layout_width="wrap_content"
+	                     android:layout_height="wrap_content"
+	                     android:layout_marginLeft="5dp"
+	                     android:text="..."
+	                     android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+    
+	                <TextView
+	                    android:id="@+id/txThnTanamNonProd"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="23dp"
+	                    android:text="b) Kebun belum menghasilkan :"
+	                    android:textSize="13dp" />
+
+	                 <TextView
+	                     android:id="@+id/txAnsThnTanamNonProd"
+	                     android:layout_width="wrap_content"
+	                     android:layout_height="wrap_content"
+	                     android:layout_marginBottom="5dp"
+	                     android:layout_marginLeft="5dp"
+	                     android:text="..."
+	                     android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+	             <TextView
+	                 android:id="@+id/txSdhPanen"
+	                 android:layout_width="wrap_content"
+	                 android:layout_height="wrap_content"
+	                 android:layout_marginBottom="5dp"
+	                 android:text="15. Apakah Anda sudah melakukan panen sejak pertama kali menanam ?"
+	                 android:textSize="13dp" />
+
+                 <TextView
+                     android:id="@+id/txAnsSdhPanen"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="5dp"
+                     android:layout_marginLeft="5dp"
+                     android:text="..."
+                     android:textSize="13dp" />
+
+                 </LinearLayout>
+                     
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+					<TextView
+					    android:id="@+id/txPanenPerBulan"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_marginBottom="5dp"
+					    android:text="16. Jika ya, berapa kali Anda panen per bulan :"
+					    android:textSize="13dp" />
+	
+					 <TextView
+					     android:id="@+id/txAnsPanenPerBulan"
+					     android:layout_width="wrap_content"
+					     android:layout_height="wrap_content"
+					     android:layout_marginBottom="5dp"
+					     android:layout_marginLeft="5dp"
+					     android:text="..."
+					     android:textSize="13dp" />
+
+				 </LinearLayout>
+				  <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+	                
+					 <TextView
+					     android:id="@+id/txKiraBerat"
+					     android:layout_width="wrap_content"
+					     android:layout_height="wrap_content"
+					     android:layout_marginBottom="5dp"
+					     android:text="17. Berapa kira-kira berat dan buah segar per panen yang Anda peroleh ?"
+					     android:textSize="13dp" />
+	                
+					 <TextView
+					     android:id="@+id/txAnsKiraBerat"
+					     android:layout_width="wrap_content"
+					     android:layout_height="wrap_content"
+					     android:layout_marginBottom="5dp"
+					     android:layout_marginLeft="5dp"
+					     android:text="..."
+					     android:textSize="13dp" />
+
+                  </LinearLayout>
+
+				<LinearLayout
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txProdperThn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="18. Produktivitas : "
+                    android:textSize="13dp" />
+
+                 <TextView
+                     android:id="@+id/txAnsProdperThn"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="5dp"
+                     android:layout_marginRight="5dp"
+                     android:text="..."
+                     android:textSize="13dp" />
+ 
+	             <TextView
+	                 android:id="@+id/ttxThn"
+	                 android:layout_width="wrap_content"
+	                 android:layout_height="wrap_content"
+	                 android:layout_marginBottom="5dp"
+	                 android:layout_weight="1"
+	                 android:text="Ton/Ha/Tahun"
+	                 android:textSize="13dp" />
+           
+				 </LinearLayout>
+				    
+				<TextView
+				    android:id="@+id/txAsalBibit"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:text="19. Asal bibit yang digunakan paling sering :"
+				    android:textSize="13dp" />
+                
+                <TextView
+                    android:id="@+id/txAnsAsalBibit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_weight="1"
+                    android:text="...."
+                    android:textSize="13dp" />
+                
+				<TextView
+				    android:id="@+id/txJenisBibit"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:text="20. Jenis bibit yang paling sering digunakan :"
+				    android:textSize="13dp" />
+                
+				<TextView
+	                android:id="@+id/txAnsJenisBibit"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="5dp"
+	                android:layout_weight="1"
+	                android:textSize="13dp"
+	                android:layout_marginLeft="23dp"
+	                android:text="...." />
+                
+				<LinearLayout
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="horizontal" >
+		            
+					<TextView
+					    android:id="@+id/txSrtfikat"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_marginBottom="5dp"
+					    android:text="21. Jika hibrida, apakah bibit bersertifikat :"
+					    android:textSize="13dp" />
+	               
+					<TextView
+					    android:id="@+id/txAnsSrtfikat"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_marginBottom="5dp"
+					    android:layout_marginLeft="5dp"
+					    android:text="...."
+					    android:textSize="13dp" />
+
+				</LinearLayout>
+				
+				<TextView
+				    android:id="@+id/txAsalPpk"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:text="22. Asal pupuk yang digunakan paling sering :"
+				    android:textSize="13dp" />
+                
+				<TextView
+                	android:id="@+id/txAnsAsalPpk"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:layout_marginBottom="5dp"
+                  	android:layout_weight="1"
+                  	android:textSize="13dp"
+                	android:layout_marginLeft="23dp"
+                	android:text="...." />          
+                
+				<LinearLayout
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="horizontal" >
+
+				<TextView
+				    android:id="@+id/txJnsPpk"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginBottom="5dp"
+				    android:text="23 Jenis Pupuk :"
+				    android:textSize="13dp" />
+                
+				<TextView
+				    android:id="@+id/txAnsJnsPpk"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginBottom="5dp"
+				    android:layout_marginLeft="5dp"
+				    android:text="..."
+				    android:textSize="13dp" />
+ 
+                </LinearLayout>
+				
+				<TextView
+				    android:id="@+id/txJmlPupuk"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginBottom="5dp"
+				    android:text="24. Jumlah Penggunaan Pupuk Sekali Pemupukan :"
+				    android:textSize="13dp" />
+                
+				<TextView
+				    android:id="@+id/txAnsJmlPupuk"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginBottom="5dp"
+				    android:layout_marginLeft="25dp"
+				    android:text="...."
+				    android:textSize="13dp" />
+ 
+				<TextView
+				    android:id="@+id/txCampur"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:text="25. Apakah anda mencampur pupuk tersebut dengan pupuk atau bahan lainnya? "
+				    android:textSize="13dp" />
+                
+                <TextView
+	                android:id="@+id/txAnsCampur"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="5dp"
+                  	android:layout_weight="1"
+                  	android:textSize="13dp"
+                	android:layout_marginLeft="23dp"
+                	android:text="...." /> 
+                
+				<TextView
+				    android:id="@+id/txyaCampur"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:text="26. Jika ya, dengan pupuk/bahan jenis apa yang anda campurkan? "
+				    android:textSize="13dp" />
+               
+				<TextView
+                	android:id="@+id/txAnsyaCampur"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:layout_marginBottom="5dp"
+                  	android:layout_weight="1"
+                  	android:textSize="13dp"
+                	android:layout_marginLeft="23dp"
+                	android:text="...." /> 
+                                             
+				<TextView
+				    android:id="@+id/txTutupanLahan"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:text="27. Tutupan lahan sebelum menjadi kebun sawit : "
+				    android:textSize="13dp" />
+                
+				<TextView
+                	android:id="@+id/txAnsTutupanLahan"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:layout_marginBottom="5dp"
+                 	android:layout_weight="1"
+                  	android:textSize="13dp"
+                	android:layout_marginLeft="23dp"
+                	android:text="...."/> 
+                
+				<TextView
+				    android:id="@+id/txJualTBS"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:text="28. Kemana anda paling sering/bisanya menjual TBS? "
+				    android:textSize="13dp" />
+                
+				<TextView
+				    android:id="@+id/txAnsJualTBS"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginBottom="25dp"
+				    android:layout_marginLeft="23dp"
+				    android:layout_weight="1"
+				    android:text="..."
+				    android:textSize="13dp" />
+ 
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

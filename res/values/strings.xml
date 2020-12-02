@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Inobu Smallholder</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_menu">Tambah Pesanan</string>
+    <string name="edit_menu">Edit Pesanan</string>
+    <string name="delete_menu">Hapus Pesanan</string>
+    <string name="errorButton">OK</string>
+    <string name="errorTitle">Peringatan</string>
+    <string name="errorMessage">Anda Ingin Keluar</string>
+    <string name="hint_user">User Name</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+
+    <string-array name="menu">
+        <item>Edit</item>
+        <item>Delete</item>
+        <item>Send</item>
+    </string-array>
+
+</resources>

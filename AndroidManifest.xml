@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inobu.mquestionair"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+	
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_inobu"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.inobu.mquestioner.SplashScreen"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.inobu.mquestioner.login"
+            android:label=" " >
+        </activity>
+        
+        <activity 
+            android:name="com.inobu.mquestioner.HalamanUtama"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="set.mquestioner.SetDesa"
+            android:label="Desa" >
+        </activity>
+        
+        <activity
+            android:name="set.mquestioner.SetNarasumber"
+            android:label="Narasumber" >
+        </activity>
+        
+        <activity
+            android:name="set.mquestioner.SetLahan"
+            android:label="Lahan" >
+        </activity>
+        
+        <activity
+            android:name="set.mquestioner.SetBibit"
+            android:label="Bibit" >
+        </activity>
+        
+        <activity
+            android:name="set.mquestioner.SetPupuk"
+            android:label="Pupuk" >
+        </activity>
+        
+		<activity
+            android:name="list.mquestioner.ListNarasumber"
+            android:label="List Narasumber" >
+        </activity>
+        
+		<activity
+            android:name="list.mquestioner.DetailNarasumber"
+            android:label="Detail Narasumber" >
+        </activity>
+        
+		<activity
+            android:name="list.mquestioner.ListLahan"
+            android:label="List Lahan" >
+        </activity>
+        
+		<activity
+            android:name="list.mquestioner.DetailLahan"
+            android:label="Detail Lahan" >
+        </activity>
+        
+		<activity
+            android:name="com.inobu.mquestioner.setting"
+            android:label="Setting" >
+        </activity>
+    </application>
+</manifest>

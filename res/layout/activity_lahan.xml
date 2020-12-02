@@ -1,0 +1,659 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.80" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lbShape"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ShapeID = "
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/shapesIDs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:lines="1"
+                    android:textIsSelectable="true"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Status Kepemilikan Lahan yang dimiliki :"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/cb0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:layout_weight="1"
+                    android:text="SKT"
+                    android:textSize="13sp" />
+
+                <CheckBox
+                    android:id="@+id/cb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:layout_weight="1"
+                    android:text="SHM"
+                    android:textSize="13sp" />
+
+                <CheckBox
+                    android:id="@+id/cb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="SKTA"
+                    android:textSize="13sp" />
+
+                <CheckBox
+                    android:id="@+id/cb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:layout_weight="1"
+                    android:text="Warisan"
+                    android:textSize="13sp" />
+
+                <CheckBox
+                    android:id="@+id/cb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:layout_weight="1"
+                    android:text="Tidak Punya"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/cb5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/txstLain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:hint="Lainnya"
+                        android:inputType="textPersonName|textCapWords"
+                        android:lines="1"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lblama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Lama menguasai lahan :"
+                android:textSize="13sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@+id/rgUmurLahan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/rb10th"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:text="Di bawah 10 tahun"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb1020th"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:text="Antara 10-20 Tahun"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb20th"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:text="Di atas 20 tahun"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbwarisan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:text="Turun temurun (warisan)"
+                        android:textSize="13sp" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/lbLuas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3. Luas Kebun :"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lbProd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="a) Kebun Menghasilkan	 : "
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/txLuasProd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:lines="1"
+                        android:textSize="13sp" >
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/TextView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ha"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lbLuasNonProd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="b) Kebun Belum Menghasilkan :"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/txLuasNonProd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:lines="1"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/TextView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ha"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lbtauntanam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Tahun Tanam :"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lbThProd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="a) Kebun Menghasilkan	 : "
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/txThProd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:lines="1"
+                        android:maxLength="4"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lbThNonProd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="b) Kebun Belum Menghasilkan :"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/txThNonProd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:lines="1"
+                        android:maxLength="4"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutPanen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/lbPanen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5. Apakah anda sudah melakukan panen sejak pertama kali menanam ?"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <RadioGroup
+                        android:id="@+id/rgPernahPanen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:textSize="13sp" >
+
+                        <RadioButton
+                            android:id="@+id/rbya"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ya, sudah pernah panen"
+                            android:textSize="13sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbtdk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-10dp"
+                            android:text="Belum pernah panen"
+                            android:textSize="13sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lbPanenBln"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6. Jika ya, berapa kali anda panen per bulan :"
+                    android:textSize="13sp" />
+
+                <RadioGroup
+                    android:id="@+id/rgPanen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/rb1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:text="1 kali"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:text="2 kali"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/lainkali"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:textSize="13sp" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/txlainkali"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="-33dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="lainnya"
+                    android:inputType="number"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/lbBerat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7. Berapa kira-kira berat tandan buah segar per panen yang anda peroleh?"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/txBerat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:lines="1"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/TextView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ton/Panen"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lbProdtaun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8. Produktivitas : "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txProdPerTaun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="..."
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/TextView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  Ton/Ha/tahun"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lbttplahan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="9. Tutupan Lahan Sebelum Menjadi Kebun Sawit :"
+                android:textSize="13sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@+id/rgTutupan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/rbHutan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:text="Hutan"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/txhutan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="-33dp"
+                        android:ems="10"
+                        android:inputType="textPersonName|textCapWords"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbKlpSwt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:text="Kebun Kelapa Sawit"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/txkelapa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="-33dp"
+                        android:ems="10"
+                        android:inputType="textPersonName|textCapWords"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbLhnGmbut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:text="Lahan Gambut"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbSawah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:text="Sawah"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbTtpLain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/txTtplain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="27dp"
+                        android:layout_marginTop="-37dp"
+                        android:ems="10"
+                        android:inputType="textPersonName|textCapWords"
+                        android:textSize="13sp" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutJual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/lbJual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10. Kemana anda paling sering/biasanya menjual TBS ?"
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical" >
+
+                    <RadioGroup
+                        android:id="@+id/rbJual"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <RadioButton
+                            android:id="@+id/rbPabrik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-5dp"
+                            android:text="Pabrik :"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/txpabrik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginTop="-33dp"
+                            android:ems="10"
+                            android:inputType="textPersonName|textCapWords"
+                            android:textSize="13sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbKoperasi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-5dp"
+                            android:text="Koperasi :"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/txKoperasi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginTop="-33dp"
+                            android:ems="10"
+                            android:inputType="textPersonName|textCapWords"
+                            android:textSize="13sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbPengepul"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-5dp"
+                            android:text="Pengepul :"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/txPengepul"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginTop="-33dp"
+                            android:ems="10"
+                            android:inputType="textPersonName|textCapWords"
+                            android:textSize="13sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbJualLain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-5dp" 
+                            android:text="BUMDES :"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/txJualLain"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="27dp"
+                            android:layout_marginTop="-33dp"
+                            android:ems="10"
+                            android:inputType="textPersonName|textCapWords"
+                            android:textSize="13sp" />
+                    </RadioGroup>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btLahanNext"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="NEXT" />
+
+</LinearLayout>

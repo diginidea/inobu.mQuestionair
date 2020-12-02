@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/TambahLahan"
+	android:title="Tambah Lahan" />
+	<item android:id="@+id/SimpanData"
+	android:title="Simpan Data" />
+	<item android:id="@+id/KirimData"
+	android:title="Kirim Data" />
+</menu>

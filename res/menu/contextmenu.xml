@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/kirimdata"
+		android:title="Kirim Data" 
+		android:visible="true"/>
+	<item android:id="@+id/hapusdata"
+		android:title="Hapus Data" 
+		android:visible="true"/>.
+	<item android:id="@+id/listlahan"
+		android:title="List Lahan" 
+		android:visible="true"/>
+	<item android:id="@+id/editDesa"
+		android:title="Edit Desa" 
+		android:visible="true"/>
+	<item android:id="@+id/editNarasumber"
+		android:title="Edit Narasumber" 
+		android:visible="true"/>
+</menu>

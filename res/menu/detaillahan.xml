@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/kirimLahan"
+	android:title="Kirim Lahan" />
+	<item android:id="@+id/editlahan"
+	android:title="Edit Lahan" />
+	<item android:id="@+id/editBibit"
+	android:title="Edit Bibit" />
+	<item android:id="@+id/editpupuk"
+	android:title="Edit Pupuk" />
+</menu>

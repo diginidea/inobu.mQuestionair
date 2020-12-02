@@ -1,0 +1,359 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.80" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/daerah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:text="Daerah Survey"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txDesa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:text="Desa :"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txAnsDesa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="5.54"
+                    android:text="...."
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txKec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:text="Kecamatan :"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txAnsKec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="...."
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txKab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:text="Kabupaten :"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txAnsKab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="...."
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txProv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:text="Provinsi :"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txAnsProv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="...."
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/narasumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Narasumber"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1. Nama :"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txAnsNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:text="...."
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txNIK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2. NIK :"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txAnsNIK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:text="...."
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txTelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3. No HP/Telepon:"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txAnsTelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:text="...."
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txKKeluarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4. Nama Kepala Keluarga di KK :"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txAnsKK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:text="...."
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txJml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5. Jumlah anggota Keluarga :"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txAnsJml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:text="...."
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/TxTmptLahir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="6. Tempat Lahir :"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txAnsTmptLahir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:text="...."
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txTglLahir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tanggal Lahir :"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txAnsTglLarhir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:text="...."
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txPddk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="7. Pendidikan Terakhir :"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txAnsPddk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:text="...."
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txSuku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="8. Suku :"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txAnsSuku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:text="...."
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txPkjUtama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="9. Pekerjaan Utama saat ini :"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txAnsPkjUtama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:text="...."
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txPkjLain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10. Pekerjaan Lain"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txAnsPkjLain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:text="...."
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txAnggtOrgn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="11. Apakah merupakan anggota organisasi petani:"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txAnsAnggtOrgn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:text="...."
+                android:textSize="13sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

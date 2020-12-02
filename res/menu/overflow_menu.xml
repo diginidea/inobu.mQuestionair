@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/file"
+          android:title="Menu" >
+        <!-- "file" submenu -->
+        <menu>
+            <item android:id="@+id/goHome"
+                  android:title="Home" />
+            <item android:id="@+id/goList"
+                  android:title="View Data" />
+        </menu>
+    </item>
+</menu>
